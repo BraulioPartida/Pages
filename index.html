@@ -15,10 +15,16 @@
             line-height: 1.6;
         }
         header {
-            background-color: #4caf50; /* Verde */
+            background-color: #4caf50;
             color: white;
             padding: 3rem 1rem;
             text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
         }
         nav ul {
             list-style: none;
@@ -52,6 +58,18 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
         footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -75,6 +93,7 @@
 </head>
 <body>
     <header>
+        <img src="images/jake.jpg" alt="Foto de Jake">
         <h1>Hola, soy Jake</h1>
         <p>Soy estudiante de Ciencia de Datos y Actuaría en el ITAM, donde combino habilidades analíticas y conocimientos estadísticos con herramientas tecnológicas para resolver problemas complejos. 
             Me apasiona explorar cómo los datos pueden transformar ideas en soluciones innovadoras y generar impacto en diversos sectores.</p>
@@ -89,10 +108,25 @@
     <main>
         <section id="about">
             <h2>Sobre mí</h2>
-            <p>Me apasiona la investigación y el análisis de datos, especialmente cuando puedo convertir información en ideas accionables que solucionen problemas reales. 
-                Fuera del ámbito académico y profesional, he logrado destacar en otros intereses personales, como ganar varios torneos de tenis, un deporte que refleja mi disciplina y enfoque.</p>
-            <p>También disfruto de los pequeños placeres de la vida, como la tarta tatin y la pasta con aceite de oliva y ajo. 
-                En cuanto a herramientas y lenguajes de programación, mis favoritos son Python, Java, MongoDB y PostgreSQL, los cuales utilizo para construir soluciones eficientes y escalables.</p>
+            <p>Me apasiona la investigación y el análisis de datos, especialmente cuando puedo convertir información en ideas accionables que solucionen problemas reales.</p>
+            <p>Fuera del ámbito académico y profesional, he logrado destacar en otros intereses personales, como ganar varios torneos de tenis. También disfruto de los pequeños placeres de la vida, como la tarta tatin y la pasta con aceite de oliva y ajo.</p>
+            <p>En cuanto a herramientas y lenguajes de programación, mis favoritos son Python, Java, MongoDB y PostgreSQL.</p>
+        </section>
+        <hr>
+        <section id="favorites">
+            <h2>Mis Favoritos</h2>
+            <h3>Comidas:</h3>
+            <div class="image-gallery">
+                <img src="images/tarta-tatin.jpg" alt="Tarta Tatin">
+                <img src="images/pasta-ajo-aceite.jpg" alt="Pasta con aceite de oliva y ajo">
+            </div>
+            <h3>Lenguajes y herramientas:</h3>
+            <div class="image-gallery">
+                <img src="images/python.jpg" alt="Python">
+                <img src="images/java.jpg" alt="Java">
+                <img src="images/mongodb.jpg" alt="MongoDB">
+                <img src="images/postgresql.jpg" alt="PostgreSQL">
+            </div>
         </section>
         <hr>
         <section id="projects">
